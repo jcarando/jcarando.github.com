@@ -50,4 +50,21 @@ table {
 	border-spacing: 0;
 }
 
+<style>
 
+body{
+	margin: 0 auto;
+	width: 960px;
+}
+body{font-family:Arial;
+	font-size:14px;
+	}
+h1{ font-size:24px;
+    font-family: Arial;
+	font-weight:bold;
+	}
+h2{ font-size:12px;
+	color:gray;
+	}
+	
+</style>
