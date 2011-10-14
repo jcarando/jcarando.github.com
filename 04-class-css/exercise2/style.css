@@ -71,7 +71,8 @@ h2{
 	color:#895d33;
 	font-weight:bold;
 	text-transform:uppercase;
-	line-height: 24px;
+	line-height: 12px;
+	margin: 10px;
 }
 #main-menu{
 	position:absolute;
@@ -123,17 +124,17 @@ h2{
 	 background:url(images/logo.png) no-repeat top left; 
 	 background-color:#EFF4DA; 
 	 text-indent:-9999px;
-	 }
-	
 }
-aside#sidebar {
+article {
+	position:absolute;
+	top:200px;
+	left:0px;
+	width:300px;
+	float:left;
+}
+aside {
+	right:0px;
+	top:200px;
+	width:300px;
 	float:right;
-	width:220px;
-	padding:50px 10 px;
-	font-size:16px;
-	font-family:Helvetica;
-	text-transform:uppercase;
-	font-weight:bold;
-	color:#895d33;
 }
-
