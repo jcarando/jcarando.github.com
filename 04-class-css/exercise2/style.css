@@ -53,7 +53,6 @@ table {
 
 p{
 	margin: 0 auto;
-	width:960px;
 	font-family: Helvetica;
 	font-size: 11px;
 	line-height:16px;
@@ -61,9 +60,10 @@ p{
 }
 h1{
 	font-size:24px;
-	font-family:Lobster;
-	line-height:48px;
+	font-family:Arial;
+	line-height:1.3em;
 	color:#895d33;
+	margin:0px;
 }
 h2{
 	font-size:16px;
@@ -71,7 +71,7 @@ h2{
 	color:#895d33;
 	font-weight:bold;
 	text-transform:uppercase;
-	line-height: 12px;
+	line-height:1em;
 	margin: 10px;
 }
 #main-menu{
@@ -125,16 +125,39 @@ h2{
 	 background-color:#EFF4DA; 
 	 text-indent:-9999px;
 }
-article {
-	position:absolute;
-	top:200px;
-	left:0px;
-	width:300px;
-	float:left;
-}
-aside {
+#content-wrapper {
+	position:relative;
+	left:30px;
 	right:0px;
-	top:200px;
-	width:300px;
-	float:right;
+	top:30px;
+	width:1000px;
+}
+#content {
+	width:400px;
+}
+#page {
+	position:absolute;
+	left:0px;
+	top:0px;
+	width:400px;
+}
+#sidebar {
+	position:absolute;
+	top:0px;
+	right:0px;
+	width:400px;
+	font-family:Arial;
+	color:#895d33;
+	text-decoration:none;
+}
+#sidebar h1{
+	text-transform:uppercase;
+	font-family:arial;
+	font-size:16px;
+	line-height:1em;
+	font-weight:bold;
+}
+#footer-wrapper {
+	positon:relative;
+	
 }
