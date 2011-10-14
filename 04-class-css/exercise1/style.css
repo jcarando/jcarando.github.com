@@ -50,21 +50,51 @@ table {
 	border-spacing: 0;
 }
 
-<style>
 
-body{
-	margin: 0 auto;
-	width: 960px;
-}
-body{font-family:Arial;
-	font-size:14px;
+
+body{margin: 0 auto;
+	line-height:1;
+	font-family:Arial;
+	color:black;
+	width: 1000px;
 	}
 h1{ font-size:24px;
     font-family: Arial;
 	font-weight:bold;
 	}
-h2{ font-size:12px;
+h2{ font-size:14px;
+	font-family: Arial;
+	line-height:2em;
+	padding-bottom:15px;
 	color:gray;
 	}
-	
-</style>
+p{font-size:14px;
+	line-height:1.3em;
+	padding-bottom:15px
+	}
+article{top:0;
+	left:0;
+	float:left;
+	margin:15px;
+	width:450px;
+	}
+img{float:left;
+	padding-right:15px;
+	padding-bottom:10px;
+	}
+ol, ul{
+	list-style:none;
+}
+blockquote, q {
+	quotes:none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after{
+	content:'';
+	content:none;
+}
+table{
+	border-collapse: collapse;
+	border-spacing:0;
+}
+}
