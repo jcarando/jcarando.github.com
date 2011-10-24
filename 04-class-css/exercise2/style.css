@@ -61,6 +61,7 @@ p{
 h1{
 	font-size:24px;
 	font-family:Arial;
+	text-transform:none;
 	line-height:1.3em;
 	color:#895d33;
 	margin:0px;
@@ -71,8 +72,8 @@ h2{
 	color:#895d33;
 	font-weight:bold;
 	text-transform:uppercase;
-	line-height:1em;
-	margin: 10px;
+	line-height:1.4em;
+	padding:10px 0 0 0;
 }
 #main-menu{
 	position:absolute;
