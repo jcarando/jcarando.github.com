@@ -117,6 +117,10 @@ h2{
 	color:#895d33;
 }
 
+a:hover {
+	color:#00FF00;
+}
+
 #site-header h1 a {
 	 display:block;  
 	 width:300px; 
@@ -157,7 +161,59 @@ h2{
 	line-height:1em;
 	font-weight:bold;
 }
+#sidebar a {
+	font-weight:bold;
+	color:#774C1B;
+	text-decoration:none;
+}
+#sidebar img {
+	float:left;
+	width:200px;
+	margin:10px 100px 0 0;
+}
 #footer-wrapper {
-	positon:relative;
-	
+	position:absolute;
+	left:0;
+	right:0;
+	bottom:0;
+	height:130px;
+	background-color:#774C1B;
+}
+#site-footer {
+	margin:0 auto;
+	width:1000px;
+}
+#footer-contact {
+	float:left;
+	width:250px;
+	font-size:14px;
+	color:#DBDCDC;
+	padding:20px 60px 20px 10px;
+}
+#footer-contact h1{
+	color:#DBDCDC;
+}
+#footer-contact p {
+	color:#DBDCDC;
+	font-size:10px;
+	width:150px;
+}
+#footer-follow {
+	float:left;
+	padding:20px 0px 20px 0;
+}
+#footer-follow h1 {
+	color:#DBDCDC;
+}
+#footer-follow li {
+	float:left;
+}
+#footer-follow img {
+	width:40px;
+	margin:10px 15px 0 -5px;
+}
+#site-footer {
+	margin:0 auto;
+	width:1000px;
+}
 }
