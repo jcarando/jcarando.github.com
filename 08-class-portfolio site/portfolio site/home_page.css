@@ -47,6 +47,7 @@ p {
 	font-size:1em;
 	}
 
+
 #site-header {
 	position: relative;
 	padding: 20px;
@@ -61,7 +62,6 @@ p {
 	
 #main-nav {
 	height:40px;
-	margin: 0 0 0 300px;
 	}
 
 #main-nav ul li a{
@@ -72,9 +72,13 @@ p {
 	background-color:white;
 	margin:20px;
 	}
+	
+#main-nav ul {
+	text-align:center;
+	}
 
 #main-nav li {
-	float:left;
+	display:inline-block;
 	}
 
 	
@@ -101,32 +105,52 @@ html[xmlns] .clearfix { display: block; }
 
 #boxes {
 	width:1000px;
+	height:500px;
 	position:relative;
-	margin:40px 0 50px 0;
-	background-color:blue;
+	margin:40px 0 0px 0;
 	}
 	
 .article {
 	float:left;
-	width:300px;
+	width:33%;
+	position:relative;
+	}
+	
+.article div {
+    display:none;
+	position:absolute;
+	bottom:120px;
+	left:50px;
+	}
+	
+.article:hover div {
+    display:block;
+    width:
+	}
+	
+.article:hover img {
+    opacity:0.4;
 	}
 
 .article img {
 	width:280px;
 	height:180px;
+	padding:0 0 40px 0;
 	}
 		
 #site-footer {
 	position:relative;
+	bottom:0;
+	width:1000px;
 	height:100px;
 	margin:0px 0 0 0;
-	background-color:orange;
 	}
 	
 #icons {
-	background-color:pink;
+	position:absolute;
+	top:0;
+	left:0;
 	float:left;
-	margin:0 0 0 40px;
 	}
 
 #icons img {
@@ -135,9 +159,11 @@ html[xmlns] .clearfix { display: block; }
 	}
 
 #copyright {
+	position:absolute;
+	top:0;
+	right:0;
 	float:left;
 	font-size:.8em;
-	background-color:green;
 	}
 	
 	
