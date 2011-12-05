@@ -63,30 +63,40 @@ h1 {
 	margin: 0 auto;}
 	
 #menu-wrapper {
-	position: relative;
-	clear: both;}
-	
+	border-top:.25em solid black;
+	border-bottom:.25em solid black;	
+	text-align:center;
+	margin: 0 auto;
+}
+
+#main-nav {
+	max-width:1040px;
+	margin: 0 auto;
+	}
+
 #main-nav li a:hover { 
-	color:#777777;}
+	color:#777777;
+	}
 
 #main-nav ul{
 	height: 40px;
-	border-top:4px solid black;
-	border-bottom:4px solid black;
-	margin:0 auto;}
+	text-align:center;
+	}
 
 #main-nav li a {
 	display:inline-block;
 	text-decoration:none;
-	font-size:2em;
+	font-size:1.5em;
 	color: black;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 10px;
-	background-color:white;}
+	padding:10px;
+	background-color:white;
+	}
 	
 #main-nav li {
-	float:left;}
+	display:inline-block;
+	}
 
 #content-wrapper {
 	position: relative;

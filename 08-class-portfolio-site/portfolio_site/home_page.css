@@ -65,7 +65,6 @@ p {
 #main-nav ul li a{
 	display:inline-block;
 	text-decoration:none;
-	color:blue
 	padding:10px;
 	background-color:white;
 	margin:20px;
@@ -79,6 +78,20 @@ p {
 
 #main-nav li {
 	display:inline-block;
+	position:relative;
+	}
+	
+#main-nav li ul {
+	display:none;
+	position:absolute;
+	top:70px;
+	background-color:white;
+	}
+	
+#main-nav li:hover ul{
+	z-index:1000;
+	display:block;
+	font-size:.8em;
 	}
 	
 #main-nav ul li a:hover {
@@ -123,21 +136,22 @@ html[xmlns] .clearfix { display: block; }
 .article div {
     display:none;
 	position:absolute;
-	text-transform:uppercase;
+	font-size:1.3em;
+	line-height:1.4em;
+	color:#17bdbd;
 	max-width:100%;
-	bottom:120px;
+	width:82%;
+	bottom:110px;
 	text-align:center;
 	}
 	
 
 .article:hover div {
     display:block;
-    width:
 	}
 	
 .article:hover img {
-    opacity:0.4;
-
+    opacity:0.04;
 	}
 
 .article img {

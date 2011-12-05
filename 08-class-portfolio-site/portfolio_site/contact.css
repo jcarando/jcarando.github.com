@@ -65,21 +65,38 @@ p {
 #main-nav ul li a{
 	display:inline-block;
 	text-decoration:none;
-	color:blue
 	padding:10px;
 	background-color:white;
 	margin:20px;
 	text-align:center;
 	font-size:1.25em;
 	}
-	
+
+#main-nav ul li a:current {
+	color:red;
+	}
+
 #main-nav ul {
 	text-align:center;
 	}
 
 #main-nav li {
 	display:inline-block;
+	position:relative;
 	}
+	
+#main-nav li ul {
+	display:none;
+	position:absolute;
+	top:70px;
+	background-color:white;
+	}	
+	
+#main-nav li:hover ul{
+	z-index:1000;
+	display:block;
+	font-size:.8em;
+	}	
 	
 #main-nav ul li a:hover {
 	color:#17bdbd;
@@ -91,6 +108,7 @@ a {
 	font-size:1em;
 	letter-spacing:.1em;
 	}
+
 	
 /* Clearfix */
 .clearfix:after {
@@ -113,15 +131,31 @@ article {
 	padding:40px 3%;
 	}
 	
-.article h1 {
+.info h1 {
 	text-transform:uppercase;
 	color:#17bdbd;
+	padding: 0 0 10px 0;
 	}
+	
+.info ul li a {	
+	text-decoration:none;
+	font-size:1em;
+	letter-spacing:.06em;
+	}
+
+.info ul li a:hover {
+	color:#17bdbd;
+	}
+		
+	
+	
 
 .article img {
 	max-width:100%;
 	padding:0 0 40px 0;
 	}
+
+	
 	
 /*FOOTER IS NOT CLEARING TO BOTTOM CORRECTLY*/	
 		

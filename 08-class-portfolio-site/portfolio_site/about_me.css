@@ -78,7 +78,21 @@ p {
 
 #main-nav li {
 	display:inline-block;
+	position:relative;
 	}
+	
+#main-nav li ul {
+	display:none;
+	position:absolute;
+	top:50px;
+	background-color:white;
+	}	
+	
+#main-nav li:hover ul{
+	z-index:1000;
+	display:block;
+	font-size:.8em;
+	}	
 	
 #main-nav ul li a:hover {
 	color:#17bdbd;
@@ -116,12 +130,13 @@ html[xmlns] .clearfix { display: block; }
 .article h1 {
 	text-transform:uppercase;
 	color:#17bdbd;
+	padding: 0 0 10px 0;
 	}
 	
 .article h2 {
 	text-transform:uppercase;
 	color:#17bdbd;
-	padding:20px 0 0 0;
+	padding:20px 0 10px 0;
 	}
 
 .article img {
