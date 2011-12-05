@@ -67,15 +67,20 @@ h1 {
 img {max-width: 100%}
 	
 #menu-wrapper {
-	position:relative;
 	border-top:.25em solid black;
 	border-bottom:.25em solid black;	
 	text-align:center;
 	margin: 0 auto;
 }
 
+#main-nav {
+	max-width:1040px;
+	margin: 0 auto;
+	}
+
 #main-nav li a:hover { 
-	color:#777777;}
+	color:#777777;
+	}
 
 #main-nav ul{
 	height: 40px;
@@ -94,17 +99,18 @@ img {max-width: 100%}
 	}
 	
 #main-nav li {
-	float:left;
+	display:inline-block;
 	}
 
 section {
-	margin: 0 auto;
+	max-width:1040px;
+	margin:0 auto;
 	}
 	
 .article {
-	width: 40%;
-	padding: 10px;
-	float: left;
+	float:left;
+	width:40%;
+	padding:10px;
 	}
 
 #footer-wrapper {
@@ -155,12 +161,10 @@ table {
 }
 
 /*responsive design*/
-@media screen and (max-width:600px) {
-	body {
-		font-size:0.5em;
-		}
+
+@media screen and (max-width:630px) {
 	p {
-		font-size:1.8em; 
+		font-size:1em; 
 		line-height:1.3em;
 		}
 	.article {
@@ -185,49 +189,46 @@ table {
 	/*figure out how to make logo image resize*/
 	
 	#main-nav ul{
-		border-top:.5em solid black; 
-		border-bottom:.5em solid black;
+		border-top:.1em solid black; 
+		border-bottom:.1em solid black;
 		float:none;
 		display:block;
-		font-size:1em;
+		padding:.1em;
 		}
+		
+	#main-nav li a {
+	font-size:1em;
+	padding:.5em;
+	}
+		
 		
 	/*figure out how to clear the nav so lines remain under text*/
 	
-@media screen and (max-width:400px) {
-	p {
-		font-size:1.8em; 
-		line-height:1.3em;
-		}
-	.article {
-		float: none;
-		width:100%;
-	}
-	article { 
-		max-width:100%;
-	}
-	#site-footer {
-		float:clear;
-		display:block;
-		}
-		
-	/*figure out how to clear the footer so it doesn't overlap*/
+@media screen and (max-width:600px) {
 	
-	#site-header h1 {
-		height:0.5em; 
-		width:0.5em;
-		}
-		
-	/*figure out how to make logo image resize*/
 	
 	#main-nav ul{
-		border-top:.5em solid black; 
-		border-bottom:.5em solid black;
+		border-top:.1em solid black; 
+		border-bottom:.1em solid black;
 		float:none;
 		display:block;
-		}	
+		padding:.05em;
+		font-size:.05em;
 	
-}
+		}
+
+	#main-nav li a {
+	font-size:.8em;
+	padding:.5em;
+	}
+	
+@media screen and (max-width:420px) {
+
+	#main-nav li a {
+	font-size:.7em;
+	padding:.3em;
+	}	
+		
 
 
 /* Center Content */
