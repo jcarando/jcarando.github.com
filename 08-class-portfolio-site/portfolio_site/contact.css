@@ -72,10 +72,6 @@ p {
 	font-size:1.25em;
 	}
 
-#main-nav ul li a:current {
-	color:red;
-	}
-
 #main-nav ul {
 	text-align:center;
 	}
@@ -129,6 +125,7 @@ article {
 	float:left;
 	width:27%;
 	padding:40px 3%;
+	top:40px;
 	}
 	
 .info h1 {
