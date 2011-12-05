@@ -106,12 +106,11 @@ a {
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
 	
-.article {
+article {
+	display:inline-block;
 	float:left;
 	width:27%;
 	padding:40px 3%;
-	position:relative;
-	color:gray;
 	}
 	
 .article h1 {
@@ -127,7 +126,8 @@ html[xmlns] .clearfix { display: block; }
 /*FOOTER IS NOT CLEARING TO BOTTOM CORRECTLY*/	
 		
 #site-footer {
-	position:relative;
+	clear:both;
+	display:block;
 	max-width:1040px;
 	height:100px;
 	margin:0 auto;
@@ -151,6 +151,7 @@ html[xmlns] .clearfix { display: block; }
 	float:right;
 	font-size:.8em;
 	margin:0 3%;
+	color:gray;
 	}
 	
 	
