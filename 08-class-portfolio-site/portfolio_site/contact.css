@@ -33,7 +33,7 @@ footer, header, hgroup, menu, nav, section {
 }
 
 body {
-	line-height: 1.3em;
+	line-height: 1.4em;
 	color: black;
 	margin:0 auto;
 	font-size:16px;
@@ -84,6 +84,7 @@ p {
 #main-nav ul li a:hover {
 	color:#17bdbd;
 	}
+		
 	
 a {
 	color:gray;
@@ -104,46 +105,26 @@ a {
 .clearfix { display: inline-block; }
 html[xmlns] .clearfix { display: block; }
 * html .clearfix { height: 1%; }
-
-#boxes {
-	max-width:1040px;
-	height:500px;
-	position:relative;
-	margin:40px 0 0px 0;
-	}
 	
 .article {
 	float:left;
 	width:27%;
-	padding:0 3%;
+	padding:40px 3%;
 	position:relative;
-	text-align:center;
+	color:gray;
 	}
 	
-.article div {
-    display:none;
-	position:absolute;
+.article h1 {
 	text-transform:uppercase;
-	max-width:100%;
-	bottom:120px;
-	text-align:center;
-	}
-	
-
-.article:hover div {
-    display:block;
-    width:
-	}
-	
-.article:hover img {
-    opacity:0.4;
-
+	color:#17bdbd;
 	}
 
 .article img {
 	max-width:100%;
 	padding:0 0 40px 0;
 	}
+	
+/*FOOTER IS NOT CLEARING TO BOTTOM CORRECTLY*/	
 		
 #site-footer {
 	position:relative;
@@ -165,8 +146,6 @@ html[xmlns] .clearfix { display: block; }
 	height:30px;
 	width:30px;
 	}
-
-/*resize icons to correct size*/
 
 #copyright {
 	float:right;
@@ -200,7 +179,7 @@ table {
 		}
 	.article {
 		width:43%;
-		padding:0 3%;	
+		padding:40px 3%;	
 		}	
 }
 
@@ -210,6 +189,7 @@ table {
 		}
 	.article {
 		width:100%;
+		padding:40px 3%;
 		}	
 }
 

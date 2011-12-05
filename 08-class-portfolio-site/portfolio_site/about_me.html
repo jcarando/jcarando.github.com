@@ -3,13 +3,14 @@
 
 <head>
 	<title> Jenna Carando </title>
-	<link rel="stylesheet" type='text/css' href="home_page.css" />
+	<link rel="stylesheet" type='text/css' href="about_me.css" />
+	<link href='http://fonts.googleapis.com/css?family=Mate' rel='stylesheet' type='text/css'>
 </head>
 
 <body> <!-- #body -->
 
 <header id='site-header'>
-		<img alt='title logo' src='logo-placeholder.png '/> 
+		<img alt='title logo' src='images/logo-placeholder.png '/> 
 
 	</header>
 
@@ -25,7 +26,7 @@
 <section id='articles'>
 
 		<article class='article'>
-			<img alt='Me' src='me.png'/>
+			<img alt='Me' src='images/me.png'/>
 		</article>
 		
 		<article class='article'>
@@ -42,19 +43,47 @@
 		</article>
 		
 		<article class='article'>
-			<img alt='Studio' src='studio.png'/>
+			<script src="http://widgets.twimg.com/j/2/widget.js"></script>
+		<script>
+		new TWTR.Widget({
+  		version: 2,
+  		type: 'profile',
+  		rpp: 4,
+  		interval: 30000,
+  		width: 250,
+  		height: 300,
+  		theme: {
+    	shell: {
+      	background: '#c3c7c6',
+      	color: '#ffffff'
+    		},
+    	tweets: {
+      	background: '#ffffff',
+      	color: '#7a7a7a',
+      	links: '#17bdbd'
+    		}
+  		},
+  		features: {
+    	scrollbar: true,
+    	loop: false,
+    	live: false,
+    	behavior: 'all'
+ 			 }
+		}).render().setUser('jenna_carando').start();
+		</script>
+
 		</article>
 		
 </section>
 
 <footer id='site-footer'>
 		<section id='copyright'>
-			<p class='last'>copyright ©2011 <em>Jenna Carando</em></p>
+			<p class='last'>copyright (c) 2011 <em>Jenna Carando</em></p>
 		</section>
 		
 		<section id='icons'>
-			<a href="#"><img alt='Email' src='email-icon.png'/></a></li> 
-			<a href="#"><img alt='Twitter' src='twitter-icon.png'/></a></li>
+			<a href="#"><img alt='Email' src='icons/email-icon.png'/></a></li> 
+			<a href="#"><img alt='Twitter' src='icons/twitter-icon.png'/></a></li>
 		</section>
 </footer>
 

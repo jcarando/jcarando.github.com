@@ -42,6 +42,7 @@ body {
 
 h1 {
 	font-size: 1.8em;
+	line-height:1.2em;
 	font-weight: bold;
 	padding-top: .5em;
 	padding-bottom: .5em;}
@@ -49,9 +50,9 @@ h1 {
 #header-wrapper {
 	position: relative;
 	height: 95px;
-	width: 445px;
 	padding: 20px;
-	margin: 0 auto;}	
+	margin: 0 auto;
+	text-align:center;}	
 	
 #site-header h1 { 
   	display:block;	  
@@ -66,38 +67,37 @@ h1 {
 img {max-width: 100%}
 	
 #menu-wrapper {
-	border-top:.25em solid black;
-	border-bottom:.25em solid black;
-}
-	
-#main-nav {
 	position:relative;
-	margin:0 auto;
-	width:1060px;
-	}
+	border-top:.25em solid black;
+	border-bottom:.25em solid black;	
+	text-align:center;
+	margin: 0 auto;
+}
 
 #main-nav li a:hover { 
 	color:#777777;}
 
 #main-nav ul{
 	height: 40px;
+	text-align:center;
 	}
 
 #main-nav li a {
 	display:inline-block;
 	text-decoration:none;
-	font-size:2em;
+	font-size:1.5em;
 	color: black;
 	text-transform: uppercase;
 	font-weight: bold;
-	padding: 10px;
-	background-color:white;}
+	padding:10px;
+	background-color:white;
+	}
 	
 #main-nav li {
-	float:left;}
+	float:left;
+	}
 
 section {
-	width: 1060px;
 	margin: 0 auto;
 	}
 	
@@ -106,7 +106,6 @@ section {
 	padding: 10px;
 	float: left;
 	}
-	
 
 #footer-wrapper {
 	position: relative;
@@ -166,10 +165,10 @@ table {
 		}
 	.article {
 		float: none;
-		width:96%;
+		width:100%;
 	}
 	article { 
-		max-width:96%;
+		max-width:100%;
 	}
 	#site-footer {
 		float:clear;
@@ -190,9 +189,43 @@ table {
 		border-bottom:.5em solid black;
 		float:none;
 		display:block;
+		font-size:1em;
 		}
 		
 	/*figure out how to clear the nav so lines remain under text*/
+	
+@media screen and (max-width:400px) {
+	p {
+		font-size:1.8em; 
+		line-height:1.3em;
+		}
+	.article {
+		float: none;
+		width:100%;
+	}
+	article { 
+		max-width:100%;
+	}
+	#site-footer {
+		float:clear;
+		display:block;
+		}
+		
+	/*figure out how to clear the footer so it doesn't overlap*/
+	
+	#site-header h1 {
+		height:0.5em; 
+		width:0.5em;
+		}
+		
+	/*figure out how to make logo image resize*/
+	
+	#main-nav ul{
+		border-top:.5em solid black; 
+		border-bottom:.5em solid black;
+		float:none;
+		display:block;
+		}	
 	
 }
 
